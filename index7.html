@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Head</title>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="/css/all.min.css">
+      <link rel="stylesheet" href="/css/style.min.css">
+   </head>
+   <body>
+    <div class="tennis">
+        <div class="container">
+           <div class="row justify-content-between">
+              <div class="col-auto mt-4">
+                 <img src="/images/logopy.svg" class="w-100">
+              </div>
+              <div class="col-auto mt-4 ">
+               <small class="text-white">Change over</small>&emsp;<label class="vl">|</label>
+               <i class="fas fa-calendar text-white"> <small>Calendar</small></i>&emsp;<label class="vl">|</label>
+               <i class="fas fa-bell text-white"> <small>Notification</small></i> 
+                 <div class="dropdown d-flex">
+                    <div class="rounded-circle overflow-hidden">
+                       <img src="https://picsum.photos/id/1027/24/24" alt="" />
+                    </div>
+                    <button class="bg-transparent dropdown-toggle border-0 text-white" type="button"
+                       data-bs-toggle="dropdown" aria-expanded="false"><b>Hi,Andrew</b></button>
+                    <ul class="dropdown-menu">
+                     <div class="row text-center ">
+                        <div class="col-sm-12 text-center">
+                           <div class="col-auto box" style="border:dashed; color:red;">
+                              <i class="fas fa-plus" style="color: red;"></i>
+                              <label class="small">Add child profile</label>
+                          </div>
+                           <!-- <div class="input-group">
+                              <button class="btn" type="button" id="show"> <i class="fa fa-plus"></i> </button>
+                         <input type="text" class="form-control" style="background-color:whitesmoke; border: dashed; color: red;" placeholder="Password">
+                          
+                            </div> -->
+                       <li><a class="dropdown-item text-start" href="#">Manage profile</a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="#">Change password</a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="#">Payment preferencs</a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="#">Transaction history</a></li>
+                       <div class="dropdown-divider"></div>
+
+                       <li><a class="dropdown-item" href="#">Privacy & parential controls</a></li>
+                       <div class="dropdown-divider"></div>
+
+                       <li><a class="dropdown-item" href="#">Notification preferences</a></li>
+                       <div class="dropdown-divider"></div>
+
+                       <li><a class="dropdown-item" href="#">App settings</a></li>
+
+
+                    </ul>
+                 </div>
+              </div>
+           </div>
+           <div class=" d-flex text-center pt-5 ">
+            <div class="col-sm-12 d-flex flex-column text-center text-white align-items-center h4">
+               Book Venues, Coaches & Academies Nearby
+               <div class="col-4 border-bottom border-2 opacity-50 my-3 fw-bold"></div>
+            </div>
+         </div>
+         <div class="row ">
+          <div class="col-2 col-lg-3"></div>
+          <div class="col-8 col-lg-6">
+         <div class="row slide-nav">
+          <div class="col-sm-4 mt-4 ">
+            <a href="#" class="active pb-2">Sports center</a>
+            </div>
+            <div class="col-sm-4  slide-nav mt-4">
+              <a href="#" class=" mx-2 pb-2">Playmates</a>
+              </div>
+              <div class="col-sm-4 slide-nav mt-4">
+                <a href="#" class="mx-2 pb-2">Lessons</a>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="row mt-5 ">
+                  <div class="col-lg-2 col-1"></div>
+                  <div class="col-lg-8 col-10 mb-5">
+                      <div class="bg-white  d-flex rounded-2">
+                          <div class="   input-group input-custom " style="width:28%;">
+                              <input type="text" list="Sport centers" class="form-control border-0"  style=" 
+                               font-family:Arial, FontAwesome" placeholder="&#xf124 Location" />
+                                 <button class="btn" type="button"><i class="fal fa-location text-secondary fs-5" ></i></button>
+                  <datalist id="Sport centers">
+                      <option value="Powder Sprinng">Powder Sprinng</option>
+                      <option value="Center 1">Center 1</option>
+                      <option value="Center 2">Center 2</option>
+                      <option value="Center 3">Center 3</option>
+                      <option value="Center 4">Center 4</option>
+                  </datalist>
+              </div>
+                          <div class=" input-group input-custom " style="width:19%;">
+                              <button class="btn pe-0" type="button"><i class="fad fa-medal text-muted " ></i></button>
+                              <select class="form-select border-0 ps-1" required>
+                              <option value="" disabled selected hidden > sport</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                            <div class=" input-group input-custom " style="width:19%;">
+                              <button class="btn pe-0" type="button"><i class="far fa-calendar text-muted"></i></button>
+                               <input type="text" class="form-control border-0 ps-1" placeholder="Date"
+                      onfocus="(this.type='date')">
+                          </div>
+                          <div class=" input-group input-custom border-0" style="width:19%;">
+                              <button class="btn pe-0" type="button"><i class="far fa-clock text-muted"></i></button>
+                              <input type="text" class="form-control border-0 ps-1" placeholder="Time"
+                      onfocus="(this.type='time')">
+                          </div>
+                          <div class=" text-start btn rounded-0 btn-primary pt-2 d-flex search-btn" ><i class="fas fa-search fs-4"></i>&nbsp Search</div>
+                      </div>
+                      </div>
+                  <div class="col-lg-2 col-1">
+      </div>
+              </div>
+           
+        </div>
+     </div>
+    </body>
+    </html>

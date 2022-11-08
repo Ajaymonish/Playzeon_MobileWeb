@@ -1,0 +1,236 @@
+$primary: #de342f !default;
+$link-decoration :none !default;
+$primary: #de342f!default;
+$tooltip-bg: #d9d6d6!default;
+$tooltip-color: #000000!default;
+$tooltip-font-size:12px!default;
+$link-decoration: none !default;
+$input-focus-box-shadow:none!default;
+$form-check-input-bg:lightgray!default;
+$form-check-input-checked-border-color:  lightgrey !default;
+$form-check-input-checked-color:#52de2f!default;
+$form-check-input-checked-bg-color:rgb(255, 255, 255)!default;
+$form-check-input-focus-box-shadow:none !default;
+$secondary:  #115bc6 !default;
+$dropdown-border-radius: 10px!default;
+@import "scss/bootstrap.scss";
+body,
+html {
+min-height: 100%;
+height: 100%;
+}
+
+.home-banner {
+background-image: url("/images/homebg.jpg");
+background-size: cover;
+position: relative;
+}
+.slide-nav 
+{
+  text-align: center;
+a{
+
+  color: white;
+}
+}
+.slide-nav a:hover {
+border-bottom: 3px solid $primary;
+}
+.slide-nav a.active {
+border-bottom: 3px solid $primary;
+}
+
+
+.home {
+background-image: url(/images/fobg.jpg);
+background-size: cover;
+background-position: center;
+}
+.icons {
+color: rgb(0, 209, 40);
+}
+.text {
+color: white;
+}
+.footer {
+background-color: #272727;
+color: white;
+}
+.fhead {
+font-size: 90%;
+font-weight: 300;
+}
+.fhead a:hover {
+color: aqua !important;
+}
+.bhead {
+font-size: small;
+font-weight: 100;
+}
+.linebar {
+text-decoration: overline;
+text-align: center;
+color: rgb(121, 121, 121);
+}
+.vl {
+color: lightgray;
+font-size: small;
+font-weight: 100;
+}
+
+.popup{
+  width: 300px;
+  background-color:whitesmoke;
+  border-radius: 6px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: start;
+  transform: translate(-50%,-50%)scale(0.1 );
+  padding: 0 30px 30px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+visibility: visible;
+right: -8%;
+bottom: -50%;
+transform: translate(-50%,-50%)scale(1 );
+}
+.tic{
+  width: 30px;
+}
+.bicon a img{
+  transition: 0.5s;
+}
+.bicon a:hover img{
+  transform: translateY(-10px);
+}
+
+// popup
+*{
+  margin: 0;
+  padding:0;
+}
+
+// .btn{
+//   padding: 10px 10px;
+//   background: #fff;
+//   border: 0;
+//   outline: none;
+//   cursor: pointer;
+//   font-size:22px;
+//   font-weight: 500;
+//   border-radius: 30px;
+// }
+.popup{
+  width: 300px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top:0%;
+  left: 50%;
+  transform: translate(-50%,-50%)scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333 ;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+  visibility:visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+
+}
+ 
+.popup h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+.btns{
+ width: 100%;
+ margin-top: 50px;
+ padding: 10px 0;
+ background: #de342f;
+ color: white;
+ border: 0;
+ outline: none;
+ font-size: 18px;
+ border-radius: 4px;
+ cursor: pointer;
+ 
+}
+.tennis {
+  background-image: url("/images/tennisindoor-banner.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  
+  }
+  .item {
+    position:relative;
+    padding-top:10px;
+    display:inline-block;
+}
+.notify-badge{
+    position: relative;
+    right:-110px;
+    bottom: -25px;
+    background:red;
+    text-align: center;
+    border-radius: 50%;
+    color:white;
+    padding:5px 5px;
+    font-size:19px;
+}
+@media (max-width:991px) and (min-width:565px) {
+  .notify-badge {
+    right:-48px;
+    bottom: -60px;
+    font-size: 15px;
+  }
+}
+.logo{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+}
+.form-select{
+  border: none !important;
+}
+.box{
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-bottom: 2px;
+  background: whitesmoke;
+}
+@media (max-width:1192px) and (min-width:576px) {
+  .checked{
+  width: 100%;
+  }
+}
+.search-btn{
+  width:22%;
+  font-size: 98%;
+  font-weight: 200;
+  border-radius: 0 5px 5px 0 !important;
+}
+.dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  display: inline-block;
+  border-right: 6px solid rgba(0,0,0,0);
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid rgba(0,0,0,0);
+  content: "";
+}
+.dropdown-item{
+  font-size: smaller;
+  text-align: start;
+
+}
+

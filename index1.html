@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Head</title>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="/css/all.min.css">
+      <link rel="stylesheet" href="/css/style.min.css">
+   </head>
+   <body>
+      <div class="home-banner w-100 h-100 pt-5">
+         <div class="container">
+            <div class="d-flex align-items-center">
+               <div class="col-sm-9 py-1">
+                  <img src="/images/logopo.svg" class="w-25" />
+                  <div class="d-flex flex-column"></div>
+               </div>
+               <div class="col-sm-2 text-end">
+                  <button class="btn btn-primary rounded-pill" onclick="openpopup()">Log in</button>
+                  <div class="popup p-0" id="popup">
+                     <div class="card bg-lightgrey rounded-3">
+                        <div class="row">
+                           <div class="col-sm-2 "></div>
+                           <div class="col-sm-8 d-flex justify-content-center">
+                              <img src="/images/cardlogofinal.svg" alt="logo" class=" w-100" />
+                           </div>
+                           <div class="col-sm-2 mt-1"><i class="fal fa-times fs-4 text-primary " onclick="closepopup()"></i></div>
+                        </div>
+                        <div class="card-body flex-column d-flex">
+                           
+                           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators bg-dark">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                 <div class="carousel-item active">
+
+                           <label for="fname">First name *</label>
+                           <input type="fname" class="form-control mb-4 mt-2 shadow-home" id="fname"
+                              placeholder="Andrew" />
+                           <label for="lname">Last name </label>
+                           <input type="lname" class="form-control mb-3 mt-2 shadow-home" id="lname"
+                              placeholder="Smith" />
+                           <label for="lname">Gender*</label>
+                           <select id="" class="form-select">
+                              <option>male</option>
+                           </select>
+                           <label class="date">Date</label>
+                              <input type="date" class="form-control" placeholder="8-7-2020">
+                           <div class="col-sm-12 text-center mt-2"></div>
+                           </div>
+                           <div class="carousel-item ">
+
+                              <label for="fname">Street</label>
+                              <input type="fname" class="form-control mb-4 mt-2 shadow-home" id="fname"
+                                 placeholder="1925 Weston Pikwy" />
+                              <label for="lname">City </label>
+                              <input type="lname" class="form-control mb-3 mt-2 shadow-home" id="lname"
+                                 placeholder="Marettiea" />
+                              <label for="lname">State</label>
+                              <input type="lname" class="form-control mb-3 mt-2 shadow-home" id="lname" placeholder="GA"/>
+                              
+                              <label for="fname">Zip code</label>
+                              <input type="fname" class="form-control mb-4 mt-2 shadow-home" id="fname"
+                                 placeholder="30064" />
+                              <div class="col-sm-12 text-center mt-2"></div>
+                              </div>
+                              <div class="carousel-item ">
+
+                                 <label for="fname">Mobile number*</label>
+                                 <input type="fname" class="form-control mb-4 mt-2 shadow-home" id="fname"
+                                    placeholder="678-678-1236" />
+                                 <label for="lname">Email address* </label>
+                                 <input type="lname" class="form-control mb-3 mt-2 shadow-home" id="lname"
+                                    placeholder="smith25andrew@gmail.com" />
+                                 <label for="lname">Password*</label>
+                                 <input type="lname" class="form-control mb-3 mt-2 shadow-home" id="lname"
+                                    placeholder="......" />
+                                 
+                                 
+                                 <label for="lname">Confirm password</label>
+                                 <input type="lname" class="form-control mb-3 mt-2 shadow-home" id="lname"
+                                    placeholder="......" />
+                                 
+                                 <div class="col-sm-12 text-center mt-2">
+                                    <small>By creating your account you agree to our</small>
+                                    <p>Terms Conditions & Privacy Policy</p>
+                                    
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-sm-8">
+                                       <img src="/images/captcha.png" alt="captcha" style="width: 100%;">
+                                    </div>
+                                 </div>
+                                 </div>
+                           
+
+                           </div>
+                           </div>
+                           <button class="btn btn-primary shadow-home">Next</button>
+                           <div class="row mt-4 mb-2">
+                              <div class="col-sm-6">
+                                 <small style="font-size:70%;">Already have an account?</small>
+                                 <a href="#">Sign in</a>
+                              </div>
+                              <div class="col-sm-6 ps-4">
+                                 <small style="font-size:70%;">Are you a sports center?</small>
+                                 <a href="#">Partner with Us</a>
+                              </div>
+                           </div>
+                           </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" d-flex text-center mt-5 pt-5 ">
+            <div class="col-sm-12 d-flex flex-column text-center text-white align-items-center h4">
+               Book Venues, Coaches & Academies Nearby
+               <div class="col-6 border-bottom border-2 opacity-50 my-3 fw-bold"></div>
+            </div>
+         </div>
+         <div class="row  mt-3 ">
+            <div class="col-4"></div>
+            <div class="col-5">
+               <div class="d-flex small slide-nav">
+                  <a href="#" class=" text-white mx-2 pb-2 active">Facilities</a>
+                  <a href="#" class=" text-white mx-5 pb-2">Playmates</a>
+                  <a href="#" class=" text-white mx-2 pb-2">Instruction</a>
+               </div>
+            </div>
+         </div>
+        
+      </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 text-center mt-5">
+               <h2>Games & Entertainment</h2>
+            </div>
+            <div class="col-sm-12 mt-3 text-center small text-muted">
+               <p>Lorem ipsum is simply dummy text of the printing and typetesting
+                  industry.Lorem ipsum has been the industry's standared <br>dummy text ever since the 1500s,when an
+                  unknown printer took a galley
+               </p>
+            </div>
+         </div>
+         <div class="row ">
+            <div class="col-sm-3 mt-2 text-end">
+               <div class="card border-0">
+                  <img src="/images/thumb2-maria-sharapova-4k-russian-tennis-players-wta-match (1).jpg"
+                     style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="  ms-2 mt-3 flex-grow-0">
+                        <small style="font-size:100%;font-weight: bold;">Tennis</small>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <small>45 courts</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end">
+               <div class="card border-0">
+                  <img src="/images/sport-ball-clay-court.jpg" style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex ">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="  ms-2 mt-3 flex-grow-0">
+                        <p>Racquetball</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/wp2557379.webp" style="height: 100px; border-radius:4px">
+                  <div class="d-flex ">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="  ms-2 mt-3 flex-grow-0">
+                        <p>Basketball</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-363.webp"
+                     style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex ">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="  ms-2 mt-3 flex-grow-0">
+                        <p>Football</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row mt-2">
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-363.webp"
+                     style="height:100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-3 mt-3">
+                        <p>Baseball</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end">
+               <div class="card border-0">
+                  <img src="/images/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-363.webp"
+                     style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-3 mt-3">
+                        <p>Soccer</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/sunset-sky-wallpaper.jpg" style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-4 mt-3">
+                        <p>Ping pong</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-363.webp"
+                     style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-4 mt-3">
+                        <p>Ice Hockey</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row mt-2">
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-363.webp"
+                     style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-4 mt-3">
+                        <p>Swimming</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/3678625.webp" style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-3 mt-3">
+                        <p>Biking</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0">
+                  <img src="/images/soccer-stadium-defocus-background-evening-arena-with-crowd-fans-d-illustration_336913-363.webp"
+                     style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-2 mt-3">
+                        <p>Yoka</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-3 mt-2 text-end ">
+               <div class="card border-0 ">
+                  <img src="/images/sunset-sky-wallpaper.jpg" style="height: 100px; border-radius: 4px;">
+                  <div class="d-flex">
+                     <div class=" mt-2 ms-0 flex flex-grow-0">
+                        <img src="/images/baseball.jpg " class="w-75 align-self-start">
+                     </div>
+                     <div class="col-sm-3 mt-3">
+                        <p>Running</p>
+                     </div>
+                     <div class="flex-grow-1 me-2 mt-3">
+                        <p>45 Courts</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="home w-100  mt-4">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6 mt-5">
+                  <div class="row">
+                     <div class="col-2">
+                        <img src="/images/MicrosoftTeams-image (2).png" class="w-75">
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <h3 class="" style="color: white;">Playzeon</h3>
+                  </div>
+                  <div class="row">
+                     <h1 class="" style="color: white;">MOBILE APP</h1>
+                  </div>
+                  <div class="row mt-5 mb-4">
+                     <i class="fas fa-check-circle icons"><small class="text"> Lorem Ipsum is simply dummy text of
+                     the printing and typesetting industry</small></i>
+                  </div>
+                  <div class="row my-4">
+                     <i class="fas fa-check-circle icons"><small class="text"> Lorem Ipsum is simply dummy text of
+                     the printing and typesetting industry</small></i>
+                  </div>
+                  <div class="row my-4">
+                     <i class="fas fa-check-circle icons"><small class="text"> Lorem Ipsum is simply dummy text of
+                     the printing and typesetting industry</small></i>
+                  </div>
+                  <div class="row my-4">
+                     <i class="fas fa-check-circle icons"><small class="text"> Lorem Ipsum is simply dummy text of
+                     the printing and typesetting industry</small></i>
+                  </div>
+                  <div class="row my-5">
+                     <div class="col-sm-3">
+                        <a href="#"><img src="/images/Download_on_the_App_Store_Badge.svg.webp"
+                           class="w-100 h-100 rounded-2"></a>
+                     </div>
+                     <div class="col-sm-3">
+                        <a href="#"><img src="/images/Google_Play_Store_badge_EN.svg.webp"
+                           class="w-100 h-100 rounded-2"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class=" container-fluid footer">
+         <div class="col-sm-12  text-center pt-5 ">
+            <a href="#" class=" text-white ">PlayzeOn</a>
+         </div>
+         <div class="col-sm-12  pt-2 linebar" style="text-decoration:overline">
+            &emsp;&nbsp;
+         </div>
+         <div class="row   fhead">
+            <div class="col-12 text-center fhead">
+               <a href="#" class=" text-white mx-4 ">About us</a><label class="vl">|</label>
+               <a href="#" class=" text-white mx-3">Terms and Conditions</a><label class="vl">|</label>
+               <a href="#" class=" text-white mx-2">Privacy</a><label class="vl">|</label>
+               <a href="#" class=" text-white mx-2">Download App</a>
+            </div>
+         </div>
+         <div class="row  mt-3">
+            <div class="col-12 text-center bicon">
+               <a href="#"> <img src="/images/facebook (1).svg" alt="did't support"></a>
+               <a href="#"><img src="/images/twitter.svg" alt="did't support"></a>
+               <a href="#"><img src="/images/instagram.svg" alt="did't support"></a>
+               <a href="#"><img src="/images/linkedin.svg" alt="did't support"></a>
+            </div>
+         </div>
+         <br>
+         <hr>
+         <div class="col-sm-12 text-center bhead">
+            <small>Weplayreal @ 2020. All Rights Reserved</small>
+         </div>
+      </div>
+      <script>
+         let popup =  document.getElementById("popup");
+         
+         function openpopup(){
+             popup.classList.add("open-popup");
+         }
+         function closepopup(){
+             popup.classList.remove("open-popup");
+         }
+         
+      </script> 
+   </body>
+</html>
