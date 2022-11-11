@@ -69,8 +69,8 @@ html {
 }
 
 .vl {
-  // color: rgb(245, 239, 239);
-  color: black;
+  color: white;
+  font-weight: 100;
 }
 
 .footericons a img {
@@ -188,6 +188,7 @@ p{
   width: 100%;
   background-size: cover;
   background-position: center;
+  height: 200px;
 
 }
 
@@ -267,11 +268,11 @@ p{
 
 }
 
-.nav-link:hover {
-  color: $primary !important;
-  background-color: whitesmoke;
-  border-radius: 10px;
-}
+// .nav-link:hover {
+//   color: $primary !important;
+//   background-color: whitesmoke;
+//   border-radius: 10px;
+// }
 
 .continuebtn {
   border-radius: 20px;
@@ -296,4 +297,20 @@ p{
 }
 .smallline{
   font-size: 12px;
+}
+.cardline:hover{
+  border-radius: 6px;
+  border: 1px solid $primary;
+}
+small{
+  font-size: 12px;
+}
+#basic-addon2{
+  background-color: #de342f;
+  color: white;
+}
+.nav-link{
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
 }
