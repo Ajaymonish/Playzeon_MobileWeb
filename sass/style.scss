@@ -1,6 +1,6 @@
 $primary: #de342f !default;
+$success: #52de2f !default;
 $link-decoration :none !default;
-$primary: #de342f !default;
 $tooltip-bg: #d9d6d6 !default;
 $tooltip-color: #000000 !default;
 $tooltip-font-size: 12px !default;
@@ -19,19 +19,32 @@ body,
 html {
   min-height: 100%;
   height: 100%;
-
 }
+// backround images
 
 .home-banner {
   background-image: url("/images/homebg.jpg");
   background-size: cover;
   position: relative;
 }
+.tennis {
+  background-image: url("/images/tennisindoor-banner.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.bottomimg {
+  background-image: url(/images/fobg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+// 
+
+
+// slide nav
 
 .slide-nav {
   text-align: center;
-  
-
 }
 
 .slide-nav a:hover {
@@ -41,38 +54,18 @@ html {
 .slide-nav a.active {
   border-bottom: 3px solid $primary;
 }
+// 
 
 
-.bottomimg {
-  background-image: url(/images/fobg.jpg);
-  background-size: cover;
-  background-position: center;
-}
+// icons
 
 .ticicons {
   color: rgb(0, 209, 40);
 }
-.lorem{
-  color: white;
-  font-size: 14px;
-  font-weight: 400;
-}
 
-.footer {
-  background-color: #272727;
-  color: white;
+.ticiconlite {
+  color: rgb(197, 192, 192);
 }
-
-.footertitle {
-  font-size: 80%;
-  font-weight: 300;
-}
-
-.vl {
-  color: white;
-  font-weight: 100;
-}
-
 .footericons a img {
   transition: 0.5s;
 }
@@ -80,6 +73,23 @@ html {
 .footericons a:hover img {
   transform: translateY(-10px);
 }
+// 
+
+
+// footer section
+.footer {
+  background-color: #272727;
+  color: white;
+  position: absolute;
+
+}
+
+.footertitle {
+  font-size: 80%;
+  font-weight: 300;
+  
+}
+
 
 .footerbottom {
   font-size: 12px;
@@ -92,29 +102,10 @@ html {
   color: rgb(121, 121, 121);
 }
 
-h5{
-  font-weight: bold;
-}
-.text-muted{
-  font-weight: 400;
-  font-size: 13px;
-}
-p{
-  font-size: 14px;
-  color: #000;
-}
-.view{
-  color: rgb(10, 135, 213);
-  font-size: 15px;
-}
-.userimg{
-  border-radius: 50%;
-}
-.userimg:hover{
-  border: 1px solid black;
-}
+// 
 
 
+// popup
 .popup {
   width: 300px;
   background-color: whitesmoke;
@@ -135,12 +126,6 @@ p{
   bottom: -50%;
   transform: translate(-50%, -50%)scale(1);
 }
-
-.tic {
-  width: 30px;
-}
-
-
 .popup {
   width: 300px;
   background: #fff;
@@ -158,7 +143,7 @@ p{
 
 .open-popup {
   visibility: visible;
-  top: 50%;
+  top: 100%;
   transform: translate(-50%, -50%) scale(1);
 
 }
@@ -168,80 +153,9 @@ p{
   font-weight: 500;
   margin: 30px 0 10px;
 }
+// 
 
-.btns {
-  width: 100%;
-  margin-top: 50px;
-  padding: 10px 0;
-  background: #de342f;
-  color: white;
-  border: 0;
-  outline: none;
-  font-size: 18px;
-  border-radius: 4px;
-  cursor: pointer;
-
-}
-
-.tennis {
-  background-image: url("/images/tennisindoor-banner.jpg");
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-
-}
-
-.item {
-  position: relative;
-  padding-top: 10px;
-  display: inline-block;
-}
-
-.notify-badge {
-  position: relative;
-  right: -110px;
-  bottom: -25px;
-  background: red;
-  text-align: center;
-  border-radius: 50%;
-  color: white;
-  padding: 5px 5px;
-  font-size: 19px;
-}
-
-@media (max-width:991px) and (min-width:565px) {
-  .notify-badge {
-    right: -48px;
-    bottom: -60px;
-    font-size: 15px;
-  }
-}
-
-.logo {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-
-}
-
-.form-select {
-  border: none !important;
-}
-
-.box {
-  border-radius: 4px;
-  padding: 4px 10px;
-  background: whitesmoke;
-}
-
-.search-btn {
-  width: 22%;
-  font-size: 98%;
-  font-weight: 200;
-  border-radius: 0 5px 5px 0 !important;
-}
-
+// dropdown
 .dropdown-menu:after {
   position: absolute;
   top: -6px;
@@ -267,50 +181,436 @@ p{
   border-width: thin;
 
 }
+// 
 
-// .nav-link:hover {
-//   color: $primary !important;
-//   background-color: whitesmoke;
-//   border-radius: 10px;
-// }
+// users
 
+
+.usercard {
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+.userimg {
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+.upcomeimg
+ { img {
+  width: 30px;
+  border-radius: 50%;
+}}
+
+
+
+// 
+
+// buttons
+.combtn {
+  padding: 6px 40px;
+  border: none;
+  background-color: #de342f !important;
+  color: white !important;
+  border-radius: 6px;
+  text-align: center;
+}
+.btns {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #de342f;
+  color: white;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.search-btn {
+  width: 22%;
+  font-size: 98%;
+  font-weight: 200;
+  border-radius: 0 5px 5px 0 !important;
+}
 .continuebtn {
   border-radius: 20px;
   color: white;
   background-color: red;
   border: none;
-  font-size: small;
+  font-size: 14px;
+  padding: 2px 14px;
 }
-
-.fa-star {
-  color: rgb(169, 145, 11);
+.popbtn {
+  border: none;
+  background-color: #de342f;
+  color: white;
+  border-radius: 20px;
+  padding: 6px 35px;
 }
+// 
 
-.fb-img {
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+
+// hovers
+.nav-link:hover {
+  color: $primary !important;
 }
-
 .itembox:hover {
   border: 1px solid red;
   border-radius: 6px;
 }
-.smallline{
-  font-size: 12px;
-}
-.cardline:hover{
+.cardline:hover {
   border-radius: 6px;
   border: 1px solid $primary;
 }
-small{
-  font-size: 12px;
+// 
+
+// fa.icons
+
+.fa-star {
+  color: #d68044;
+  font-size: 14px;
 }
-#basic-addon2{
-  background-color: #de342f;
-  color: white;
+.fb-img {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
-.nav-link{
+.fa-sun{
+
+color: 
+#fbea70;
+}
+// 
+
+// Media
+@media (max-width:991px) and (min-width:565px) {
+  .notify-badge {
+    right: -48px;
+    bottom: -60px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .mobile-navigation {
+    position: fixed;
+    left: -110%;
+    height: 100%;
+    top: 0px;
+    z-index: 99;
+  }
+}
+@media(max-width:576px){
+  .footertitle{
+    a{
+    display: block;
+    padding: 2px;
+  }
+}
+}
+
+// 
+
+// navbar
+
+.nav-link {
   color: white;
   font-size: 12px;
   font-weight: 400;
+
 }
+
+.nav-link i {
+  font-size: 13px;
+}
+
+.sidebar {
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+}
+// 
+
+
+// H tags
+
+h4 {
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight:bold;
+}
+
+// 
+
+// Images
+#trueimg{
+border-radius: 100%;
+  }
+#upcomeimg{
+  border-radius: 100%;
+  width: 30px;
+}
+// 
+
+
+// craete class
+.lorem {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.vl {
+  color: ghostwhite;
+  font-weight: 100;
+}
+
+.text-muted {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.view {
+  color: rgb(10, 135, 213);
+  font-size: 15px;
+}
+
+.profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.tic {
+  width: 30px;
+}
+.item {
+  position: relative;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+
+.notify-badge {
+  position: relative;
+  right: -110px;
+  bottom: -25px;
+  background: red;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  padding: 5px 5px;
+  font-size: 19px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+}
+
+.form-select {
+  border: none !important;
+}
+
+.box {
+  border-radius: 4px;
+  padding: 4px 10px;
+  background: whitesmoke;
+}
+.Add{
+  color:#de342f;
+  font-weight: bold;
+}
+.Advance{
+  font-size: 12PX;
+  color: rgb(0, 209, 40);
+
+}
+// 
+
+// small
+.smallline {
+  font-size: 12px;
+}
+
+small {
+  font-size: 12px;
+}
+
+
+// 
+
+// p tag
+.plite {
+  font-size: 15px;
+  font-weight: 300;
+  color: black;
+}
+
+.pdark {
+  font-size: 15px;
+}
+
+// 
+
+// id tag #
+#basic-addon2 {
+  background-color: #de342f;
+  color: white;
+}
+
+// 
+
+
+
+// chat page
+
+.chat-container {
+  position: relative;
+  padding: 4rem;
+}
+
+.chat-container li.chat-left,
+.chat-container li.chat-right {
+  display: flex;
+  flex: 1;
+  flex-direction:row;
+  margin-bottom: 20px;
+}
+
+.chat-container li img {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+}
+
+#sendimg {
+  background-color: none;
+  height: 100px !important;
+  width: 30% !important;
+  border: 1 px solid red;
+  border-radius: 2px;
+
+}
+
+.chat-container li .chat-avatar {
+  margin-right: 10px;
+
+
+}
+.chat-container li .chat-avatar .chat-name{
+  font-size: 12px;
+}
+
+.chat-container li.chat-right {
+  justify-content: flex-end;
+}
+
+.chat-container li.chat-right>.chat-avatar {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+
+.chat-container li .chat-text {
+  padding: .2rem 1rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #2b2b2b;
+  color: white;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  font-size: 12px;
+}
+
+
+.chat-container li.chat-right>.chat-text {
+  text-align: start;
+  background-color: #de342f;
+  color: white;
+}
+
+
+
+.chat-container li .chat-hour {
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: .75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 15px;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .chat-container li.chat-left,
+  .chat-container li.chat-right {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .chat-container li img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .chat-container li.chat-left .chat-avatar {
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .chat-container li.chat-left .chat-name {
+    margin-left: 5px;
+  }
+
+  .chat-container li.chat-right .chat-avatar {
+    order: -1;
+    margin: 0 0 5px 0;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+  }
+
+  .chat-container li .chat-text {
+    font-size: .8rem;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.typebox {
+  border: none;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.msgsend {
+  background-color: $primary;
+  border: none;
+  border-radius: 100%;
+  color: white;
+}
+
+// 
+
