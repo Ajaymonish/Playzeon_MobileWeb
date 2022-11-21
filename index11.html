@@ -2,120 +2,327 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Head</title>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Head</title>
+   <script src="/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="/css/all.min.css">
+   <link rel="stylesheet" href="/css/style.min.css">
 </head>
 
 <body>
-    <div class="tennis">
-        <div class="container">
-            <div class="row d-flex">
-                <nav class="navbar navbar-expand-lg navbar-light mt-3">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><img src="/images/logopy.svg" style="width: 120%;"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" style="background-color: white;"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav" style="padding-left: 40%;">
-                          <li class="nav-item">
-                            <small class="text-white text-end">Change Cover</small>
-                          </li>&emsp;&emsp;
-                          <li class="nav-item">
-                            <i class="fal fa-calendar-check text-white"></i>  <small class="text-white"> Calendar</small>
-                          </li>&emsp;&emsp;
-                          <li class="nav-item">
-                            <button class="position-relative bg-transparent border-0 text-white me-4">
-                                <i class="fal fa-bell h6"></i>
-                                <span
-                                    class="position-absolute top-0  translate-middle badge rounded-pill bg-danger">
-                                    8
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                                <small>Notification</small> </button></li>
+   <div class="tennis">
+      <div class="container">
+         <div class="row d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light mt-3">
+               <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="/images/logopy.svg" style="width: 120%;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon" style="background-color: white;"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav" style="padding-left: 40%;">
+                        <li class="nav-item">
+                           <small class="text-white text-end">Change Cover</small>
+                        </li>
+                        &emsp;&emsp;
+                        <li class="nav-item">
+                           <i class="fal fa-calendar-check text-white"></i> <small class="text-white"> Calendar</small>
+                        </li>
+                        &emsp;&emsp;
+                        <li class="nav-item">
+                           <button class="position-relative bg-transparent border-0 text-white me-4">
+                              <i class="fal fa-bell h6"></i>
+                              <span class="position-absolute top-0  translate-middle badge rounded-pill bg-danger">
+                                 8
+                                 <span class="visually-hidden">unread messages</span>
+                              </span>
+                              <small>Notification</small> </button>
+                        </li>
+                        <li class="nav-item">
+                           <div class="">
+                              <div class="dropdown d-flex">
+                                 <div class="rounded-circle overflow-hidden">
+                                    <img src="https://picsum.photos/id/1027/24/24" alt="" />
+                                 </div>
+                                 <button class="bg-transparent dropdown-toggle border-0 text-white" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"><b>Hi,Andrew</b></button>
+                                 <ul class="dropdown-menu px-3">
+                                    <div class="row text-center ">
+                                       <div class="col-sm-12 text-start">
+                                          <li class=" dropdownbox mb-2 rounded-1">
+                                             <div class="input-group ">
+                                                <button class="btn px-1 py-0" type="button" id="show"> <i
+                                                      class="fas fa-plus-circle text-primary mt-1 fs-5"></i>
+                                                </button>
+                                                <input type="text" class="form-control border-0 px-0 py-0"
+                                                   placeholder="Add child profile">
+                                             </div>
+                                          </li>
+                                          <li><a class="dropdown-item ps-1 py-0" href="#">Manage profile</a></li>
+                                          <div class="dropdown-divider"></div>
+                                          <li><a class="dropdown-item ps-1 py-0" href="#">Change password</a></li>
+                                          <div class="dropdown-divider"></div>
+                                          <li><a class="dropdown-item ps-1 py-0" href="#">Payment preferencs</a></li>
+                                          <div class="dropdown-divider"></div>
+                                          <li><a class="dropdown-item ps-1 py-0" href="#">Transaction history</a></li>
+                                          <div class="dropdown-divider"></div>
+                                          <li><a class="dropdown-item ps-1 py-0" href="#">Privacy & parential
+                                                controls</a>
+                                          </li>
+                                          <div class="dropdown-divider"></div>
+                                          <li><a class="dropdown-item ps-1 py-0" href="#">Notification preferences</a>
+                                          </li>
+                                          <div class="dropdown-divider"></div>
+                                          <li><a class="dropdown-item ps-1 py-0" href="#">App settings</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <div class="row mt-5">
+               <div class="col-sm-2"></div>
+               <div class="col-sm-6">
+                  <div class="row text-white">
+                     <div class="col-sm-8 ">
+                        <h5>Tennis @ Harrison</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container-fluid" style="background: whitesmoke;">
+      <div class="row ">
+         <div class="col-2  mobile-navigation  mt-4 ">
+            <nav class="nav flex-column p">
+               <a class="nav-link d-flex align-items-center justify-content-between text-muted sidebar ms-2"
+                  aria-current="page" href="#"> <label><i class="fas fa-home"></i> Home </label><span><i
+                        class="far fa-chevron-right"></i></span> </a>
+               <a class="nav-link d-flex align-items-center justify-content-between text-muted mt-2 sidebar ms-2"
+                  aria-current="page" href="#"><label><i class="fas fa-user-friends"></i> Connections</label><span><i
+                        class="far fa-chevron-right"></i></span> </a>
+               <a class="nav-link d-flex align-items-center justify-content-between text-muted mt-2 sidebar ms-2"
+                  aria-current="page" href="#"><label><i class="fas fa-play"> </i>My play</label><span><i
+                        class="far fa-chevron-right"></i></span> </a>
+               <a class="nav-link d-flex align-items-center justify-content-between text-muted mt-2 sidebar ms-2"
+                  aria-current="page" href="#"><label><i class="fas fa-blog"></i> Post</label><span><i
+                        class="far fa-chevron-right"></i></span> </a>
+            </nav>
+         </div>
+         <div class="col-10  mt-4 flex-fill">
+            <div class="container">
+               <div class="card mb-3" style="border:none">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-10">
+                           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                              <ol class="breadcrumb">
+                                 <li class="breadcrumb-item"><a href="#"><small class="text-muted">Sports
+                                          Centers</small></a></li>
+                                 <li class="breadcrumb-item"><a href="#"><small class="text-muted">Harrison Tennis
+                                          Centers</small></a></li>
+                                 <li class="breadcrumb-item"><a href="#"><small class="text-muted">Pick your
+                                          chioce</small></a></li>
+                                 <li class="breadcrumb-item"><a href="#"><small class="text-muted">Pick your
+                                          chioce</small></a></li>
+                                 <li class="breadcrumb-item " aria-current="page"><small>Payment</small></li>
+                              </ol>
+                           </nav>
+                        </div>
+                        <div class="col-2 text-end">
+                           <small><i class="far fa-chevron-left"> Back</i></small>
+                        </div>
+                        <hr class="mt-2 text-muted">
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-4">
+                           <b>Select Options to pay</b>
+                        </div>
+                     </div>
+                     <div class="row mt-3">
+                        <div class="col-sm-2">
+                           <input type="radio" id="adult" value="Adult"> <span><img src="/images/card.png"
+                                 class="w-75"></span>
+                        </div>
+                        <div class="col-sm-4">
+                           <input type="radio" id="adult" value="Adult"> <span><img src="/images/paypal.webp"
+                                 class="w-25"></span>
+                        </div>
+                     </div>
+                     <div class="row mt-3">
+                        <div class="col-sm-4 ms-2">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="Andrew Smith">
+                              <label for="floatingInput"><small class="text-muted">Card Holder Name</small></label>
+                           </div>
+                        </div>
+                     </div>
 
-                                <li class="nav-item">
-                                    <div class="">
-                                        <div class="dropdown d-flex">
-                                            <div class="rounded-circle overflow-hidden">
-                                                <img src="https://picsum.photos/id/1027/24/24" alt="" />
-                                            </div>
-                                            <button class="bg-transparent dropdown-toggle border-0 text-white" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false"><b>Hi,Andrew</b></button>
-                                            <ul class="dropdown-menu px-3">
-                                                <div class="row text-center ">
-                                                    <div class="col-sm-12 text-start">
-                                                        <li class=" dropdownbox mb-2 rounded-1">
-                                                            <div class="input-group ">
-                                                                <button class="btn px-1 py-0" type="button" id="show"> <i
-                                                                        class="fas fa-plus-circle text-primary mt-1 fs-5"></i>
-                                                                </button>
-                                                                <input type="text" class="form-control border-0 px-0 py-0"
-                                                                    placeholder="Add child profile">
-                                                            </div>
-                                                        </li>
-                                                        <li><a class="dropdown-item ps-1 py-0" href="#">Manage profile</a></li>
-                                                        <div class="dropdown-divider"></div>
-                                                        <li><a class="dropdown-item ps-1 py-0" href="#">Change password</a></li>
-                                                        <div class="dropdown-divider"></div>
-                                                        <li><a class="dropdown-item ps-1 py-0" href="#">Payment preferencs</a></li>
-                                                        <div class="dropdown-divider"></div>
-                                                        <li><a class="dropdown-item ps-1 py-0" href="#">Transaction history</a></li>
-                                                        <div class="dropdown-divider"></div>
-                                                        <li><a class="dropdown-item ps-1 py-0" href="#">Privacy & parential
-                                                                controls</a></li>
-                                                        <div class="dropdown-divider"></div>
-                                                        <li><a class="dropdown-item ps-1 py-0" href="#">Notification preferences</a>
-                                                        </li>
-                                                        <div class="dropdown-divider"></div>
-                                                        <li><a class="dropdown-item ps-1 py-0" href="#">App settings</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    </li>
-                   
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                  <div class="row mt-5">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-6">
-                        <div class="row text-white">
-                            <div class="col-sm-8 ">
-                                <h5>Tennis @ Harrison</h5>
-                            </div>
+                     <div class="row">
+                        <div class="col-sm-4 ms-2">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="............. 4321">
+                              <label for="floatingInput"><small class="text-muted">Credit card number</small></label>
+                           </div>
                         </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                <div class="container " style="background: whitesmoke;">
-                    <div class="row ">
-                        <div class="col-2 bg-white mobile-navigation ">
-                            <nav class="py-3 d-flex flex-column ms-3 location">
-                                <a href=""
-                                    class=" nav-link small text-decoration-none d-flex align-items-center justify-content-between p-2 text-black active text-muted"><span><i
-                                            class="fas fa-home"></i> Home</span> <i class="far fa-chevron-right"></i>
-                                </a>
-                                <a href=""
-                                    class=" nav-link small text-decoration-none d-flex align-items-center justify-content-between p-2 text-black active text-muted"><span><i
-                                            class="fal fa-user-friends"></i>
-                                        Connections</span> <i class="far fa-chevron-right"></i>
-                                </a>
-                                <a href=""
-                                    class=" nav-link small text-decoration-none d-flex align-items-center justify-content-between p-2 text-black active text-muted"><span><i
-                                            class="fal fa-play"></i> My plays</span> <i class="far fa-chevron-right"></i>
-                                </a>
-                                <a href=""
-                                    class=" nav-link small text-decoration-none d-flex align-items-center justify-content-between p-2 text-black active text-muted"><span><i
-                                            class="fal fa-blog"></i> Post</span> <i class="far fa-chevron-right"></i>
-                                </a>
-                            </nav>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-sm-2">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="07 / 25">
+                              <label for="floatingInput"><small class="text-muted">Valid until</small></label>
+                           </div>
                         </div>
+                        <div class="col-sm-2">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="178">
+                              <label for="floatingInput"><small class="text-muted">CVV</small></label>
+                           </div>
+                        </div>
+                     </div>
+
+                     <h6>Billing Address</h6>
+                     <div class="row">
+                        <div class="col-sm-4">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="1925 Weston Pkwy">
+                              <label for="floatingInput"><small class="text-muted">Street</small></label>
+                           </div>
+                        </div>
+                        <div class="col-sm-4">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="">
+                              <label for="floatingInput"><small class="text-muted">Apt/suite</small></label>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-sm-4">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="Marietta">
+                              <label for="floatingInput"><small class="text-muted">City</small></label>
+                           </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="GA">
+                              <label for="floatingInput"><small class="text-muted">State</small></label>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div class="row">
+                        <div class="col-sm-4">
+                           <div class="form-floating mb-3">
+                              <input type="email" class="form-control"
+                                 style="border: none; border-bottom: 1px solid gainsboro; border-radius: 0;"
+                                 id="floatingInput" placeholder="name@example.com" value="3064">
+                              <label for="floatingInput"><small class="text-muted">Zip code</small></label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-6 mt-3 ms-2 mb-3">
+                           <button type="button" class="btn combtn" data-bs-toggle="modal" data-bs-target="#myModal">Pay
+                              $8.00</button>
+                           <div class="col-sm-4">
+                              <a href="#">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class=" container-fluid footer">
+      <div class="col-sm-12  text-center pt-4 mb-1">
+         <b><a href="#" class="text-white">PlayzeOn</a></b>
+      </div>
+      <div class="col-sm-12  pt-2 linebar" style="text-decoration:overline">
+         &emsp;&nbsp;
+      </div>
+      <div class="row footertitle">
+         <div class="col-12 text-center">
+            <a href="#" class=" text-white mx-4 ">About us</a><label class="vl">|</label>
+            <a href="#" class=" text-white mx-3">Terms & Conditions</a><label class="vl">|</label>
+            <a href="#" class=" text-white mx-2">Privacy</a><label class="vl">|</label>
+            <a href="#" class=" text-white mx-2">Download App</a>
+         </div>
+      </div>
+      <div class="row mt-3">
+         <div class="col-12 text-center footericons">
+            <a href="#"> <img src="/images/facebook (1).svg" alt="did't support" class="mx-1"></a>
+            <a href="#"><img src="/images/twitter.svg" alt="did't support" class="mx-1"></a>
+            <a href="#"><img src="/images/instagram.svg" alt="did't support" class="mx-1"></a>
+            <a href="#"><img src="/images/linkedin.svg" alt="did't support" class="mx-1"></a>
+         </div>
+      </div>
+      <br>
+
+      <hr>
+      <div class="col-sm-12 text-center footerbottom">
+         <small>Weplayreal @ 2020. All Rights Reserved</small>
+      </div>
+   </div>
+   <!-- Modal -->
+   <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-sm">
+
+         <!-- Modal content-->
+         <i class="fal fa-times fs-3 text-white text-end" class="close" data-bs-dismiss="modal"
+            style="padding-left: 90%;"></i>
+         <div class="card" style="border-radius:10px">
+            <div class="row">
+               <div class="col-sm-12 text-center mt-4">
+                  <i class="fas fa-check-circle fs-2 ticicons"></i>
+               </div>
+            </div>
+            <div class="row mt-4">
+               <div class="col-sm-12 text-center">
+                  <p>Your sports center is <br> booked Successfully</p>
+               </div>
+            </div>
+            <div class="col-sm-12 text-center mt-4 mb-4">
+               <button type="button" class="btn combtn">Done</button>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+
+
+
+
+</body>
+</html>

@@ -10,31 +10,46 @@
       <link rel="stylesheet" href="/css/style.min.css">
    </head>
    <body>
-      <div class="container">
-      <button type="submit" class="btn" onclick="openpopup()">Submit</button>
-      <div class="popup" id="popup"> 
-         <div class="col-sm-12 text-end">
-         <i class="fal fa-times ms-3"></i>
+      <div class="row">
+         <div class="col-sm-6 mt-3 ms-2 mb-3">
+            <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#myModal">Cancel Play</button>
+            <div class="col-sm-4">
+               <a href="#">
+            </div>
          </div>
-         <img src="/images/icons8-ok.svg" style="width: 50px;">
-         <h3>Thank you for signing up</h3>
-         <div class="col-sm-12">
-         <small>Let's take a few minutes to setup<br>your player profile</small>
+      </div>
+      <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+   <div class="modal-dialog modal-sm">
+ 
+     <!-- Modal content-->
+       <i class="fal fa-times fs-3 text-white text-end" class="close" data-bs-dismiss="modal" style="padding-left: 90%;"></i>
+       <div class="card" style="border-radius:10px">
+          <div class="row">
+             <div class="col-sm-12 text-center mt-4">
+               <i class="fas fa-check-circle fs-4 ticicons"></i>
+             </div>
+          </div>
+          <div class="row mt-2">
+             <div class="col-sm-12 text-center">
+                <b>Thanks for Signing up</b>
+             </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-12 text-center">
+               <small>Let's Take a few minutes to set<br>Your player profile</small>
+            </div>
          </div>
-            <button class="btns btn-primary" onclick="closepopup()">Next</button>
+         <div class="col-sm-12 text-center mt-2 mb-4">
+            <button type="button" class="btn combtn">Continue</button>
+            </div>
+
+
+         </div>
+         </div>
+         </div>
+         
         
-      </div>
-      </div>
-      <script>
-         let popup =  document.getElementById("popup");
-         
-         function openpopup(){
-             popup.classList.add("open-popup");
-         }
-         function closepopup(){
-             popup.classList.remove("open-popup");
-         }
-         
-      </script> 
+          
    </body>
 </html>
